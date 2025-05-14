@@ -22,4 +22,10 @@ class Room extends Model
         'available_to' => 'datetime',
         'price_per_night' => 'float',
     ];
+
+    public function bookings()
+    {
+    return $this->hasMany(Booking::class);
+    }
+
 }

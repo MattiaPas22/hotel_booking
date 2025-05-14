@@ -1,4 +1,19 @@
-@import "bootstrap/dist/css/bootstrap.min.css";
-body {
-    font-family: 'Titillium Web', sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Colori personalizzati per i badge */
+.badge-success {
+    background-color: #28a745;  /* Verde per confermato */
+    color: white;
+}
+
+.badge-warning {
+    background-color: #ffc107;  /* Giallo per in attesa */
+    color: black;
+}
+
+.badge-danger {
+    background-color: #dc3545;  /* Rosso per annullato */
+    color: white;
 }
